@@ -2,7 +2,7 @@ function BrowserTS(url = "./browser-ts-sw.js") {
   if ("serviceWorker" in navigator) {
     const interceptorLoaded = navigator.serviceWorker.controller != null;
     addEventListener("load", function () {
-      navigator.serviceWorker.register(url, {type: 'module'})
+      navigator.serviceWorker.register(url)
         .then(function (registration) {
           console.log(
             "ServiceWorker registration successful with scope: ",
