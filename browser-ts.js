@@ -1,4 +1,4 @@
-function BrowserTS(url = "./browser-ts-sw.js") {
+function browserTS(url = "./browser-ts-sw.js") {
   if ("serviceWorker" in navigator) {
     const interceptorLoaded = navigator.serviceWorker.controller != null;
     addEventListener("load", function () {
@@ -17,4 +17,8 @@ function BrowserTS(url = "./browser-ts-sw.js") {
         });
     });
   }
-} 
+}
+
+async function browserTSUnregister() {
+  (await navigator.serviceWorker.getRegistrations())[0].unregister()
+}
