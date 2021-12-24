@@ -6,7 +6,7 @@ const handleTs = async (req) => {
     console.log('Compiling...', req.url)
     const replaced = compile(text);
     console.log('Compiled', req.url)
-    let headers = new Headers(res.headers);
+    const headers = new Headers(res.headers);
     headers.set('Content-Type', 'application/javascript');
     return new Response(replaced, {headers, status: 200, statusText: 'OK'});
     // return new Response(replaced);

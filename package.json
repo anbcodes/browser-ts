@@ -1,11 +1,9 @@
 {
-  "name": "browser-ts",
+  "name": "@anbcodes/browser-ts",
   "version": "0.0.1",
-  "description": "",
+  "private": false,
+  "description": "Support for typescript files in the browser using service workers",
   "main": "browser-ts.js",
-  "directories": {
-    "example": "example"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
