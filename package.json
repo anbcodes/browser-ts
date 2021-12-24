@@ -1,0 +1,15 @@
+{
+  "name": "browser-ts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "browser-ts.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
