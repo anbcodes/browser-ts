@@ -1,6 +1,6 @@
 {
   "name": "@anbcodes/browser-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "Support for typescript files in the browser using service workers",
   "main": "browser-ts.js",
