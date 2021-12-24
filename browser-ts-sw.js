@@ -1,4 +1,4 @@
-importScripts('https://unpkg.com/typescript@latest/lib/typescriptServices.js')
+importScripts('https://unpkg.com/typescript@4.5.4/lib/typescriptServices.js')
 
 const handleTs = async (req) => {
     const res = await fetch(req);
