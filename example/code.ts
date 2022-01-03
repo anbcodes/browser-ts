@@ -1,18 +1,7 @@
-import code2 from './code2.ts';
+import helloWorld from "./helloworld.ts";
 
-const something = 'code.ts'
-console.log(something);
+export default function code() {
+  console.log("Importing helloworld.ts from code.ts!");
 
-interface Name {
-    type: 'name',
-    somedata: string,
+  helloWorld("Hello");
 }
-
-const item: Name = {
-    type: 'name',
-    somedata: 'Hello'
-}
-
-console.log('My item from code.ts', item);
-
-code2();

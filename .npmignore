@@ -1,5 +1,5 @@
 *
 !/README.md
 !/LICENSE
-!/browser-ts-sw.js
-!/browser-ts.js
+!/sw.js
+!/index.js

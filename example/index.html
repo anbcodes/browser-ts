@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script type="application/typescript">
-        import './code.ts'
-        console.log('main code')
-        type Hello string;
+    <script type="module">
+        import browserTS from 'https://unpkg.com/@anbcodes/browser-ts';
+        browserTS('./sw.js');
     </script>
 
-    <script src="../browser-ts.js"></script>
-    <script>browserTS('/browser-ts-sw.js')</script>
+    <script type="module">
+        import code from './code.ts';
+        code();
+    </script>
 </body>
+
 </html>
